@@ -21,12 +21,3 @@ Após você entrar no app com as suas credencias de acesso, o aplicativo irá ba
 > Dependendo do volume de dados que a sua empresa tem, pode demorar um pouco para que esse primeiro carregamento se complete.
 
 Esse carregamento é feito somente após acessar o app pela primeira vez.
-
-
-## ✅ O que eu consigo fazer offline?
-- Responder as auditorias carregadas
-- Criar auditorias (manual ou do modelo)
-
-## ❌ O que eu não consigo fazer offline?
-- Enviar auditorias
-- Carregar novas auditorias
