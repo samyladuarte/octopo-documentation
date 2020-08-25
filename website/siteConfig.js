@@ -23,15 +23,17 @@ const users = [
 const siteConfig = {
   title: 'Octopo', // Title for your website.
   tagline: 'Manual de uso do app',
-  url: 'https://octopo.com.br', // Your website URL
+  url: 'https://danielfpedro.github.io', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
-  //   baseUrl: '/test-site/',
+  baseUrl: '/octopo-documentation/',
 
   // Used for publishing and more
-  projectName: 'octopo-manual',
-  organizationName: 'Octopo',
+  projectName: 'octopo-documentation',
+  organizationName: 'danielfpedro',
+
+
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
   //   organizationName: 'JoelMarcey'
