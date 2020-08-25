@@ -25,12 +25,8 @@ const siteConfig = {
   tagline: 'Manual de uso do app',
   url: 'https://danielfpedro.github.io', // Your website URL
   baseUrl: '/octopo-documentation/',
-
-  // Used for publishing and more
   projectName: 'octopo-documentation',
   organizationName: 'danielfpedro',
-
-
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
   //   organizationName: 'JoelMarcey'
