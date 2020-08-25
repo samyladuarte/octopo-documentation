@@ -24,7 +24,6 @@ const siteConfig = {
   title: 'Octopo', // Title for your website.
   tagline: 'Manual de uso do app',
   url: 'https://danielfpedro.github.io', // Your website URL
-  baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   baseUrl: '/octopo-documentation/',
