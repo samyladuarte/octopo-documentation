@@ -1,13 +1,13 @@
 ---
 id: planos-de-acao-atribuicoes
-title: Atribuições
+title: Atribuições de responsabilidade
 ---
 
 
 ## Responsável pelo plano
-- Aprova o plano
-- Cancela o plano
-- Reabre uma tarefa concluída caso ele ache que ela não foi realmente concluída (Ao reabrir ele obrigatóriamente deve deixar um comentário do por que a tarefa está senda reaberta)
+- Aprova o plano.
+- Cancela o plano.
+- Reabre uma tarefa concluída caso ele ache que ela não foi realmente concluída (Ao reabrir ele obrigatóriamente deve deixar um comentário do por que a tarefa está senda reaberta).
 
 ## Executante do plano
 - Cria tarefas e delega para que o problema do plano de ação seja solucionado.

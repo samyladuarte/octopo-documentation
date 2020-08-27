@@ -7,10 +7,28 @@
 
 /* your custom css */
 
+.sitemap {
+	justify-content: center !important;
+}
+.footer-section {
+	flex: none !important;
+	/* background-color: red; */
+}
+.footer-section-left {
+	text-align: right !important;
+}
+.footer-separator {
+width: 100px !important;
+	flex: none !important;
+}
+
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
 }
 
 @media only screen and (min-width: 1024px) {
+	.footer-section {
+		width: 260px;
+	}
 }
 
 @media only screen and (max-width: 1023px) {

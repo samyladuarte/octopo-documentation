@@ -1,6 +1,7 @@
 ---
 id: auditorias-carregamento-dos-dados
 title: Carregamento dos dados
+description: "Como funciona o carregamento dos dados."
 ---
 
 Ao entrar no app pela primeira vez, o aplicativo irá baixar para o seu dispositivo todas as informações necessárias para que você consiga fazer as suas auditorias `offline`.
@@ -23,7 +24,7 @@ Ao entrar no app pela primeira vez, o aplicativo irá baixar para o seu disposit
 ## Atualizar dados
 Ao tocar no botão atualizar, todos os dados criados ou editados no `painel de controle` desde o momento da última atualização serão carregados para o seu dispositivo.
 
-<img src="/octopo-documentation/img/atualizar-dados.gif" width="260" style="margin-top: 60px" />
+<img src="/img/atualizar-dados.gif" width="260" style="margin-top: 60px" />
 
 ## Dúvidas frequentes
 - **Quando eu atualizar os dados vai carregar tudo de novo?**

@@ -8,69 +8,44 @@
 const React = require('react');
 
 class Footer extends React.Component {
-  docUrl(doc) {
-    const baseUrl = this.props.config.baseUrl;
-    const docsUrl = this.props.config.docsUrl;
-    const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`;
-    return `${baseUrl}${docsPart}${doc}`;
-  }
+	docUrl(doc) {
+		const baseUrl = this.props.config.baseUrl;
+		const docsUrl = this.props.config.docsUrl;
+		const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`;
+		return `${baseUrl}${docsPart}${doc}`;
+	}
 
-  render() {
-    return (
-      <footer className="nav-footer" id="footer">
-        <section className="sitemap">
-          {/* <a href={this.props.config.baseUrl} className="nav-home">
-            {this.props.config.footerIcon && (
-              <img
-                src={this.props.config.baseUrl + this.props.config.footerIcon}
-                alt={this.props.config.title}
-                width="66"
-                height="58"
-              />
-            )}
-          </a> */}
-          <div>
-            <h5>Aonde nos encontrar</h5>
-            <a href={this.docUrl('doc1.html')}>
-              Website
-            </a>
-            <a href={this.docUrl('doc1.html')}>
-              Facebook
-            </a>
-            <a href={this.docUrl('doc2.html')}>Instagram</a>
-          </div>
-          <div>
-            <h5>Contato</h5>
-            <a
-              href="mailto:contato@octopo.com.br"
-              target="_blank"
-              rel="noreferrer noopener">
-              Email (contato@octopo.com.br)
-            </a>
-            <a
-              href="https://wa.me/552433489468/"
-              target="_blank"
-              rel="noreferrer noopener">
-                Whatsapp
-            </a>
-          </div>
-        </section>
+	render() {
+		return (
+			<footer className="nav-footer" id="footer">
+				<section className="sitemap">
+					<div className="footer-section footer-section-left">
+						<h5>Aonde nos encontrar</h5>
+						<a href="https://octopo.com.br">Website</a>
 
-        <a
-          href="https://opensource.facebook.com/"
-          target="_blank"
-          rel="noreferrer noopener"
-          className="fbOpenSource">
-          <img
-            src={`${this.props.config.baseUrl}img/logo.png`}
-            alt="Facebook Open Source"
-            width="170"
-          />
-        </a>
-        <section className="copyright">{this.props.config.copyright}</section>
-      </footer>
-    );
-  }
+						<a href="https://www.linkedin.com/company/octopoapp/">Linkedin</a>
+						<a href="https://www.facebook.com/octopo.com.br/">Facebook</a>
+						<a href="https://www.instagram.com/octopo.app/">Instagram</a>
+					</div>
+					<div className="footer-separator footer-section-right" />
+					<div className="footer-section">
+						<h5>Contato</h5>
+						<a href="mailto:contato@octopo.com.br" target="_blank" rel="noreferrer noopener">
+							Email (contato@octopo.com.br)
+						</a>
+						<a href="https://wa.me/24974013997/" target="_blank" rel="noreferrer noopener">
+							Whatsapp
+						</a>
+					</div>
+				</section>
+
+				<a href="https://octopo.com.br/" target="_blank" rel="noreferrer noopener" className="fbOpenSource">
+					<img src={`${this.props.config.baseUrl}${this.props.config.footerIcon}`} alt="Octopo" width="170" />
+				</a>
+				{/* <section className="copyright">{this.props.config.copyright}</section> */}
+			</footer>
+		);
+	}
 }
 
 module.exports = Footer;

@@ -1,6 +1,7 @@
 ---
 id: auditorias-criacao
 title: Criando auditorias
+description: "Como criar auditorias."
 ---
 
 ## Como as auditorias são criadas?

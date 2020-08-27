@@ -7,15 +7,11 @@
 			"auditorias-geral",
 			"auditorias-auditando",
 			"auditorias-prazos",
-			"auditorias-envio",
-			"auditorias-duvidas-frequentes"
+			"auditorias-envio"
 		],
 		"Históricos": [ "historicos-geral" ],
 		"Planos de Ação": [
 			"planos-de-acao-introducao",
-			"planos-de-acao-atribuicoes",
-			"planos-de-acao-status-possiveis",
-			"planos-de-acao-tarefas",
 			"planos-de-acao-duvidas-frequentes"
 		]
 	}
