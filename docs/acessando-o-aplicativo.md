@@ -3,7 +3,7 @@ id: acessando-o-aplicativo
 title: Acessando aplicativo
 ---
 
-## Ainda não é um cliente Octopo?
+## Criando a sua conta
 Você pode fazer o seu cadastro em [octopo.com.br](https://octopo.com.br)  e **usar grátis por 30 dias**.
 
 ## Email de acesso
