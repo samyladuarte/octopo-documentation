@@ -26,7 +26,6 @@ const siteConfig = {
   url: 'https://danielfpedro.github.io', // Your website URL
   baseUrl: '/',
   customDocsPath: 'como-usar',
-  // baseUrl: '/octopo-documentation/',
   projectName: 'octopo-documentation',
   organizationName: 'danielfpedro',
   cname: 'manual.octopo.com.br',
