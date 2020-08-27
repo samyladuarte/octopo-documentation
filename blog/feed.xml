@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
     <channel>
-        <title>Octopo Blog</title>
+        <title>Ajuda Octopo Blog</title>
         <link>https://danielfpedro.github.io/blog</link>
-        <description>The best place to stay up-to-date with the latest Octopo news and events.</description>
+        <description>The best place to stay up-to-date with the latest Ajuda Octopo news and events.</description>
         <lastBuildDate>Tue, 24 Oct 2017 06:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
-            <title>Octopo Blog</title>
-            <url>https://danielfpedro.github.io/img/logo.png</url>
+            <title>Ajuda Octopo Blog</title>
+            <url>https://danielfpedro.github.io/img/logos/logo_navbar.png</url>
             <link>https://danielfpedro.github.io/blog</link>
         </image>
         <copyright>Todos os direitos reservados © 2020 Octopo</copyright>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://danielfpedro.github.io/blog</id>
-    <title>Octopo Blog</title>
+    <title>Ajuda Octopo Blog</title>
     <updated>2017-10-24T06:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://danielfpedro.github.io/blog"/>
-    <subtitle>The best place to stay up-to-date with the latest Octopo news and events.</subtitle>
-    <logo>https://danielfpedro.github.io/img/logo.png</logo>
+    <subtitle>The best place to stay up-to-date with the latest Ajuda Octopo news and events.</subtitle>
+    <logo>https://danielfpedro.github.io/img/logos/logo_navbar.png</logo>
     <rights>Todos os direitos reservados © 2020 Octopo</rights>
     <entry>
         <title type="html"><![CDATA[New Version 1.0.0]]></title>
