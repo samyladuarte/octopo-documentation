@@ -2,9 +2,10 @@
 	"docs": {
 		"Acessando Aplicativo": [ "acessando-o-aplicativo" ],
 		"Auditorias": [
-			"auditorias-introducao",
+			"auditorias-carregamento-dos-dados",
+			"auditorias-criacao",
 			"auditorias-geral",
-			"auditorias2",
+			"auditorias-auditando",
 			"auditorias-prazos",
 			"auditorias-envio",
 			"auditorias-duvidas-frequentes"

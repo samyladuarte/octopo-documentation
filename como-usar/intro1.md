@@ -12,12 +12,8 @@ Esse é o seu email de acesso informado no momento do cadastro no site.
 ## Senha
 Esta é a senha informada no momento do cadastro no site.
 
+
+## Esqueceu a sua senha?
 Caso você tenha esquecido, é possível recuperá-la tocando no botão `esqueceu a sua senha?`. Você vai receber um email com as instruções para que ela seja recuperada.
 
-## Primeiro carregamento
-
-Após você entrar no app com as suas credencias de acesso, o aplicativo irá baixar para o seu dispositivo todas as informações necessárias para que você consiga usar `offline`.
-
-> Dependendo do volume de dados que a sua empresa tem, pode demorar um pouco para que esse primeiro carregamento se complete.
-
-Esse carregamento é feito somente após acessar o app pela primeira vez.
+<img src="/octopo-documentation/img/esqueceu-a-sua-senha.gif" alt="Esqueceu a sua senha?" width="260" style="margin-top: 60px;"/>

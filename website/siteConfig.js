@@ -38,7 +38,7 @@ const siteConfig = {
   headerLinks: [
     {doc: 'acessando-o-aplicativo', label: 'Manual do App'},
 
-    {page: 'https://google.com', label: 'Ajuda'},
+    // {page: 'https://google.com', label: 'Ajuda'},
     // {blog: true, label: 'Blog'},
   ],
 
@@ -71,7 +71,7 @@ const siteConfig = {
   */
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
-  copyright: `Copyright © ${new Date().getFullYear()} Allcateia.co`,
+  copyright: `Todos os direitos reservados © ${new Date().getFullYear()} Octopo`,
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.
