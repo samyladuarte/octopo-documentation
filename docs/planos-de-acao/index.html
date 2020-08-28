@@ -1,0 +1,127 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Plano de ação · Octopo Ajuda</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&#x27;Explicação de como funciona um plano de ação.&#x27;"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Plano de ação · Octopo Ajuda"/><meta property="og:type" content="website"/><meta property="og:url" content="https://danielfpedro.github.io/"/><meta property="og:description" content="&#x27;Explicação de como funciona um plano de ação.&#x27;"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/logos/logo_navbar.png" alt="Octopo Ajuda"/></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a target="_self"></a></li><li class="siteNavGroupActive"><a href="/docs/acessando-o-aplicativo" target="_self">App Android/iOS</a></li><li class=""><a href="/docs/painel-web-em-criacao" target="_self">Painel Web</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Planos de Ação</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Acessando Aplicativo</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/acessando-o-aplicativo">Acessando o aplicativo</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Auditorias</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/auditorias-introducao">Auditorias Introdução</a></li><li class="navListItem"><a class="navItem" href="/docs/auditorias-carregamento-dos-dados">Carregamento dos dados</a></li><li class="navListItem"><a class="navItem" href="/docs/auditorias-criando">Criando</a></li><li class="navListItem"><a class="navItem" href="/docs/auditorias-visao-geral">Visão geral</a></li><li class="navListItem"><a class="navItem" href="/docs/auditorias-auditando">Auditando</a></li><li class="navListItem"><a class="navItem" href="/docs/auditorias-prazos">Prazos</a></li><li class="navListItem"><a class="navItem" href="/docs/auditorias-enviando">Enviando</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Históricos</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/historicos-geral">Históricos</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Planos de Ação</h3><ul class=""><li class="navListItem navListItemActive"><a class="navItem" href="/docs/planos-de-acao">Plano de ação</a></li><li class="navListItem"><a class="navItem" href="/docs/planos-de-acao-tarefas">Tarefas</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Plano de ação</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="introdução"></a><a href="#introdução" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Introdução</h2>
+<p>Um plano de ação é um conjunto de tarefas que servem para corrigir um problema identificado. Esse problema pode ser geral em uma auditoria ou específico de alguma pergunta da auditoria.</p>
+<!-- Uma ou mais tarefas deverão ser criadas para que o problema do plano de ação seja solucionado.  -->
+<p>O plano irá transitar por diversos <code>status</code> até ser <code>aprovado</code>.</p>
+<h2><a class="anchor" aria-hidden="true" id="quem-pode-interagir-com-um-plano-de-ação"></a><a href="#quem-pode-interagir-com-um-plano-de-ação" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Quem pode interagir com um plano de ação?</h2>
+<p>Um plano possui duas atribuições de responsabilidades que são:</p>
+<ul>
+<li>Responsável</li>
+<li>Executante</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="permissões-de-cada-responsabilidade"></a><a href="#permissões-de-cada-responsabilidade" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Permissões de cada responsabilidade</h3>
+<table>
+<thead>
+<tr><th></th><th>Criar tarefa</th><th>Aprovar o plano</th><th>Cancelar o plano</th><th>Reabrir o plano</th></tr>
+</thead>
+<tbody>
+<tr><td>Responsável <strong>do plano</strong></td><td>✔️</td><td>✔️</td><td>✔️</td><td>✔️</td></tr>
+<tr><td>Executante <strong>do plano</strong></td><td>✔️</td><td>❌</td><td>❌</td><td>❌</td></tr>
+</tbody>
+</table>
+<h2><a class="anchor" aria-hidden="true" id="quais-planos-aparecem-para-mim-no-app"></a><a href="#quais-planos-aparecem-para-mim-no-app" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Quais planos aparecem para mim no app?</h2>
+<p>Você terá acesso aos planos de ação em que você é:</p>
+<ul>
+<li>O criador do plano.</li>
+<li>O responsável pelo plano.</li>
+<li>O executante do plano.</li>
+<li>O responsável por uma ou mais tarefas do plano.</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="status-possíveis"></a><a href="#status-possíveis" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Status possíveis</h2>
+<p>Todo plano de ação possui um <code>status</code> para indicar o seu estado atual. Os <code>status</code> possíveis são:</p>
+<h3><a class="anchor" aria-hidden="true" id="cancelado"></a><a href="#cancelado" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Cancelado</h3>
+<p>O plano de ação foi cancelado pelo <code>responsável do plano</code>.</p>
+<h3><a class="anchor" aria-hidden="true" id="aguardando-criação-de-tarefas"></a><a href="#aguardando-criação-de-tarefas" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Aguardando criação de tarefas</h3>
+<p>A auditoria não tem nenhuma tarefa criada.</p>
+<h3><a class="anchor" aria-hidden="true" id="em-andamento"></a><a href="#em-andamento" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Em andamento</h3>
+<p>A auditoria tem uma ou mais tarefas criadas porém nem todas estão concluídas.</p>
+<h3><a class="anchor" aria-hidden="true" id="aguardando-aprovação"></a><a href="#aguardando-aprovação" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Aguardando aprovação</h3>
+<p>Todas as tarefas criadas estão concluídas.</p>
+<h3><a class="anchor" aria-hidden="true" id="aprovado"></a><a href="#aprovado" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Aprovado</h3>
+<p>Todas as tarefas foram concluídas e o <code>responsável do plano</code> aprovou.</p>
+<h2><a class="anchor" aria-hidden="true" id="como-funciona-a-transição-dos-status"></a><a href="#como-funciona-a-transição-dos-status" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Como funciona a transição dos <code>status</code>?</h2>
+<p>A maioria das transições ocorrem de forma automática, por exemplo, o <code>status</code> <code>aguardando criação de tarefas</code> irá mudar para <code>em andamento</code> automaticamente assim que alguma tarefa for criada. A   lgumas transições devem ser feitas de forma manual, segue abaixo a relação de todas:</p>
+<ul>
+<li><strong>Cancelado</strong>: Manual.</li>
+<li><strong>Aguardando criação de tarefas</strong>: Automático.</li>
+<li><strong>Em andamento</strong>: Automático.</li>
+<li><strong>Aguardando aprovação</strong>: Automático.</li>
+<li><strong>Aprovado</strong>: Manual.</li>
+</ul>
+<blockquote>
+<p><strong>ℹ️ Informação</strong>: A alteração do <code>status</code> para <code>Aprovado</code> ou <code>Cancelado</code> será feita exclusivamente pelo <strong>responsável do plano</strong> que foi explicado na seção &quot;<a href="planos-de-acao-introducao#quem-pode-interagir-com-um-plano-de-ação">quem pode integrir com o plano</a>&quot;.</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="aprovando-um-plano-de-ação"></a><a href="#aprovando-um-plano-de-ação" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Aprovando um plano de ação</h2>
+<p>Após <code>responsável do plano</code> deverá verifiar se todas as tarefas resultaram na solução do problema do plano de ação e então alterar o o <code>status</code> para <code>aprovado</code>.</p>
+<blockquote>
+<p><strong>ℹ️ Informação</strong>: Só é possível alterar o <code>status</code> para <code>aprovado</code> se o <code>status</code> atual for <code>aguardando aprovação</code>.</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="reabrindo-um-plano-de-ação"></a><a href="#reabrindo-um-plano-de-ação" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Reabrindo um plano de ação</h2>
+<p>É possível reabrir um plano que já tenha sido aprovado caso o <code>responsável do plano</code> tenha aprovado ou cancelado por engado ou até mesmo tenha mudado de ideia.</p>
+<h2><a class="anchor" aria-hidden="true" id="-dúvidas-frequentes"></a><a href="#-dúvidas-frequentes" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>🤔 Dúvidas frequentes</h2>
+<ul>
+<li><strong>Se eu aprovar um plano e voltar atrás eu consigo reabrí-lo?</strong>
+<ul>
+<li>Sim. O <code>responsável do plano</code> tem o poder de reabrir um plano.</li>
+</ul></li>
+<li><strong>Eu consigo cancelar um plano se ele não tiver nenhuma tarefa criada ou tarefas criadas porém pendentes?</strong>
+<ul>
+<li>Sim. O plano pode ser cancelado a qualquer momento.</li>
+</ul></li>
+</ul>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/historicos-geral"><span class="arrow-prev">← </span><span>Históricos</span></a><a class="docs-next button" href="/docs/planos-de-acao-tarefas"><span>Tarefas</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#introdução">Introdução</a></li><li><a href="#quem-pode-interagir-com-um-plano-de-ação">Quem pode interagir com um plano de ação?</a><ul class="toc-headings"><li><a href="#permissões-de-cada-responsabilidade">Permissões de cada responsabilidade</a></li></ul></li><li><a href="#quais-planos-aparecem-para-mim-no-app">Quais planos aparecem para mim no app?</a></li><li><a href="#status-possíveis">Status possíveis</a><ul class="toc-headings"><li><a href="#cancelado">Cancelado</a></li><li><a href="#aguardando-criação-de-tarefas">Aguardando criação de tarefas</a></li><li><a href="#em-andamento">Em andamento</a></li><li><a href="#aguardando-aprovação">Aguardando aprovação</a></li><li><a href="#aprovado">Aprovado</a></li></ul></li><li><a href="#como-funciona-a-transição-dos-status">Como funciona a transição dos <code>status</code>?</a></li><li><a href="#aprovando-um-plano-de-ação">Aprovando um plano de ação</a></li><li><a href="#reabrindo-um-plano-de-ação">Reabrindo um plano de ação</a></li><li><a href="#-dúvidas-frequentes">🤔 Dúvidas frequentes</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><div class="footer-section footer-section-left"><h5>Aonde nos encontrar</h5><a href="https://octopo.com.br">Website</a><a href="https://www.linkedin.com/company/octopoapp/">Linkedin</a><a href="https://www.facebook.com/octopo.com.br/">Facebook</a><a href="https://www.instagram.com/octopo.app/">Instagram</a></div><div class="footer-separator footer-section-right"></div><div class="footer-section"><h5>Contato</h5><a href="mailto:contato@octopo.com.br" target="_blank" rel="noreferrer noopener">Email (contato@octopo.com.br)</a><a href="https://wa.me/24974013997/" target="_blank" rel="noreferrer noopener">Whatsapp</a></div></section><a href="https://octopo.com.br/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/img/logos/logo.png" alt="Octopo" width="170"/></a></footer></div></body></html>
