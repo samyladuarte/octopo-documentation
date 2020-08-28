@@ -1,11 +1,11 @@
 ---
-id: auditorias-envio
+id: auditorias-enviando
 title: Enviando
-description: 'Como enviar uma auditoria.'
+description: 'Explicação de como enviar uma auditoria.'
 ---
 
-Quando todas as perguntas estiverem respondidas, o botão no canto inferir direito vai mudar para um ícone de envio. Tocando neste botão a auditoria será enviada para o painel de controle
-e assim considerada encerrada. 
+Quando todas as perguntas estiverem respondidas, você pode enviar para o `painel de controle`
+e assim ela será considerada encerrada. 
 
 > 💡 **Dica**: É importante conferir todas as respostas antes de enviar. Não é possível fazer qualquer tipo de alteração após o envio.
 

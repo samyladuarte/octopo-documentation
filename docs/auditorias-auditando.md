@@ -1,12 +1,12 @@
 ---
 id: auditorias-auditando
 title: Auditando
-description: "Como responder as perguntas para completar a auditoria."
+description: "Explicaçõa de como responder as perguntas para completar a auditoria."
 ---
 
-Assim que você entra com qualquer dado na auditoria, seja responder pergunta, registrar alguma evidência fotográfica ou colocar uma observação, esses dados são automaticamente salvos no seu dispositivo. 
+Assim que você entra com qualquer dado na auditoria, seja responder uma pergunta, registrar alguma evidência fotográfica ou colocar uma observação, esses dados ficarão salvos no seu dispositivo mesmo estando `offline`.
 
-Caso o seu dispositivo esteja online, esses dados também são enviado para a nuvem. Assim, mesmo que vc deslogue ou perca o seu dispositivo, vc ainda pode recuperar esses dados quando vc logar em outro dispositivo.
+Caso o seu dispositivo esteja `online`, esses dados também são enviados para a nuvem. Assim, mesmo que vc deslogue ou perca o seu dispositivo, vc ainda pode recuperar esses dados quando em um dispositivo novo.
 
 ## Representação do estado da sua entrada de dado
 - **Ícone cinza**: dado salvo apenas no dispositivo.
@@ -14,24 +14,24 @@ Caso o seu dispositivo esteja online, esses dados também são enviado para a nu
 
 ## Tipos de pergunta
 ### Múltipla escolha
-Para responder basta selecionar uma das alternativas.
+Resposta feita através da sleção de uma das alternativas apresentadas para a pergunta.
 ### Dissertativa
-Para responder basta entrar com um texto.
+Resposta feita através de texto.
 
 ## Evidência fotográfica do auditor
 São fotos tiradas para mostrar algum fato relativo a resposta dada na pergunta.
 
 ### Mínimo de evidências
-Somente quando o `painel de controle` configurar para que a evidência na resposta seja obrigatória. Nesses casos você deve registrar no **mínimo 01 evidência**.
+Somente quando o `painel de controle` configurar para que a evidência na resposta seja obrigatória. Nesses casos você deve registrar no **mínimo 1 evidência**.
 
 ### Máximo de evidências
-Você pode registrar no **máximo 05 evidências** por pergunta.
+Você pode registrar no **máximo 5 evidências** por pergunta.
 
-### Observação da pergunta
-Nas perguntas de `múltipla escolha` as vezes é necessário comunicar alguma coisa através de texto. A observação serve para esses casos.
+## Observação da pergunta
+Nas perguntas de `múltipla escolha`, as vezes é necessário comunicar alguma coisa através de texto. A observação serve para esses casos.
 
 
-## Dúvidas Frequentes
+## 🤔 Dúvidas Frequentes
 
 - **Preciso estar conectado a Internet para responder as perguntas, registrar evidências fotográficas e colocar comentários?**
     - Não, a auditoria pode ser feita inteiramente offline.

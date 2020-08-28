@@ -1,7 +1,7 @@
 ---
-id: auditorias-geral
-title: Visão geral de uma auditoria
-description: "Visão geral da auditoria."
+id: auditorias-visao-geral
+title: Visão geral
+description: "Informações gerais sobre a auditoria."
 ---
 
 ## Localização da Filial

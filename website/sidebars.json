@@ -2,17 +2,15 @@
 	"docs": {
 		"Acessando Aplicativo": [ "acessando-o-aplicativo" ],
 		"Auditorias": [
+			"auditorias-introducao",
 			"auditorias-carregamento-dos-dados",
-			"auditorias-criacao",
-			"auditorias-geral",
+			"auditorias-criando",
+			"auditorias-visao-geral",
 			"auditorias-auditando",
 			"auditorias-prazos",
-			"auditorias-envio"
+			"auditorias-enviando"
 		],
 		"Históricos": [ "historicos-geral" ],
-		"Planos de Ação": [
-			"planos-de-acao-introducao",
-			"planos-de-acao-duvidas-frequentes"
-		]
+		"Planos de Ação": [ "planos-de-acao", "planos-de-acao-tarefas" ]
 	}
 }

@@ -1,16 +1,16 @@
 ---
-id: auditorias-criacao
-title: Criando auditorias
-description: "Como criar auditorias."
+id: auditorias-criando
+title: Criando
+description: "Explicação de como criar auditorias."
 ---
 
 ## Como as auditorias são criadas?
-- O `painel de controle` pode criar uma auditoria com configurações específicas para que você execute.
+- O `painel de controle` pode criar uma auditoria com configurações específicas para que você executar.
 - Você mesmo pode criar uma auditoria para você executar.
 - Você mesmo pode criar uma auditoria a partir de uma modelo, para você executar.
 
 ## Para que serve um modelo de auditoria?
-O modelo serve para que o auditor crie auditorias com configurações pré estabelecidas. Além de agilizar a criação da auditoria para o auditor, o modelo ainda 
+O modelo serve para que o auditor crie auditorias com configurações pré estabelecidas. Além de agilizar a criação da auditoria pelo auditor, o modelo ainda 
 garante que as configurações da auditoria sejam as mesmas que o `painel de controle` estabeleceu.
 
 ## Dúvidas frequentes

@@ -21,8 +21,8 @@ const users = [
 ];
 
 const siteConfig = {
-	title: 'Ajuda Octopo', // Title for your website.
-	tagline: 'Manual de uso do app',
+	title: 'Octopo Ajuda', // Title for your website.
+	tagline: 'Manual de uso do app Android/iOS e Painel Web',
 	url: 'https://danielfpedro.github.io', // Your website URL
 	baseUrl: '/',
 	projectName: 'octopo-documentation',
@@ -34,8 +34,9 @@ const siteConfig = {
 
 	// For no header links in the top nav bar -> headerLinks: [],
 	headerLinks: [
-		{ search: true }
-		// {doc: 'acessando-o-aplicativo', label: 'Manual do App'},
+		{ search: true },
+		{doc: 'acessando-o-aplicativo', label: 'App Android/iOS'},
+		{doc: 'painel-web-em-criacao', label: 'Painel Web'}
 		// {page: 'https://google.com', label: 'Ajuda'},
 		// {blog: true, label: 'Blog'},
 	],
@@ -50,8 +51,8 @@ const siteConfig = {
 
 	/* Colors for website */
 	colors: {
-		primaryColor: '#2A64AD',
-		secondaryColor: '#160e39'
+		primaryColor: '#2319be',
+		secondaryColor: '#251ea8'
 	},
 
 	/* Custom fonts for website */
