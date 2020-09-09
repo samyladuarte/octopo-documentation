@@ -38,14 +38,14 @@ O plano de ação foi cancelado pelo `responsável do plano`.
 ### Aguardando criação de tarefas
 A auditoria não tem nenhuma tarefa criada.
 ### Em andamento
-A auditoria tem uma ou mais tarefas criadas porém nem todas estão concluídas.
+A auditoria tem uma ou mais tarefas criadas, porém nem todas estão concluídas.
 ### Aguardando aprovação
 Todas as tarefas criadas estão concluídas.
 ### Aprovado
 Todas as tarefas foram concluídas e o `responsável do plano` aprovou.
 
 ## Como funciona a transição dos `status`?
-A maioria das transições ocorrem de forma automática, por exemplo, o `status` `aguardando criação de tarefas` irá mudar para `em andamento` automaticamente assim que alguma tarefa for criada. A   lgumas transições devem ser feitas de forma manual, segue abaixo a relação de todas:
+A maioria das transições ocorre de forma automática, por exemplo, o `status` `aguardando criação de tarefas` irá mudar para `em andamento` automaticamente assim que alguma tarefa for criada. Algumas transições devem ser feitas de forma manual, segue abaixo a relação de todas:
 
 - **Cancelado**: Manual.
 - **Aguardando criação de tarefas**: Automático.
@@ -53,14 +53,14 @@ A maioria das transições ocorrem de forma automática, por exemplo, o `status`
 - **Aguardando aprovação**: Automático.
 - **Aprovado**: Manual.
 
-> **ℹ️ Informação**: A alteração do `status` para `Aprovado` ou `Cancelado` será feita exclusivamente pelo **responsável do plano** que foi explicado na seção "[quem pode integrir com o plano](planos-de-acao-introducao#quem-pode-interagir-com-um-plano-de-ação)".
+> **ℹ️ Informação**: A alteração do `status` para `Aprovado` ou `Cancelado` será feita exclusivamente pelo **responsável do plano** conforme foi explicado na seção "[quem pode integrir com o plano](planos-de-acao-introducao#quem-pode-interagir-com-um-plano-de-ação)".
 
 ## Aprovando um plano de ação
-Após `responsável do plano` deverá verifiar se todas as tarefas resultaram na solução do problema do plano de ação e então alterar o o `status` para `aprovado`.
+Após isso, o `responsável do plano` deverá verificar se todas as tarefas resultaram na solução do problema do plano de ação e então alterar o `status` para `aprovado`.
 > **ℹ️ Informação**: Só é possível alterar o `status` para `aprovado` se o `status` atual for `aguardando aprovação`.
 
 ## Reabrindo um plano de ação
-É possível reabrir um plano que já tenha sido aprovado caso o `responsável do plano` tenha aprovado ou cancelado por engado ou até mesmo tenha mudado de ideia.
+É possível reabrir um plano que já tenha sido aprovado caso o `responsável do plano` tenha aprovado ou cancelado por engano ou até mesmo tenha mudado de ideia.
 
 ## 🤔 Dúvidas frequentes
 
