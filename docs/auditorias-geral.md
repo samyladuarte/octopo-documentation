@@ -5,13 +5,13 @@ description: "Informações gerais sobre a auditoria."
 ---
 
 ## Localização da Filial
-É possível acessar a localização da filial que vai ser audititada. Com isso fica fácil chegar até o local através de algum aplicativo de navegação.
+É possível acessar a localização da filial que vai ser audititada. Com isso fica fácil chegar até o local por meio de algum aplicativo de navegação.
 
 ## Observação geral
 É possível adicionar uma observação geral para a auditoria.
 
 ## Configurações dos planos de ação automáticos
-Caso você tenha criado a auditoria no aplicativo, é possível configurar as informações dos plano de ação automáticos.
+Caso você tenha criado a auditoria no aplicativo, é possível configurar as informações dos planos de ação automáticos.
 
 ## Deletar Auditoria
 Caso você tenha criado a auditoria no aplicativo, é possível removê-la.
