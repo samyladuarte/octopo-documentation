@@ -1,18 +1,18 @@
 ---
 id: planos-de-acao-tarefas
 title: Tarefas
-description: 'Explicação de para que serve as tarefas do plano de ação.'
+description: 'Para que servem as tarefas do plano de ação.'
 ---
 
 ## Introdução
-As tarefas são ações necessárias para que a o problema do plano seja resolvido.
+As tarefas são ações necessárias para que o problema do plano seja resolvido.
 
 O plano deverá ter no mínimo uma tarefa e não tem nenhum limite máximo.
 
 ### Responsável da tarefa
 É o usuário do sistema que deverá acompanhar a execução da tarefa e marcar sua conclusão quando achar necessário.
 
-> **❗ Importante**: Não confundir o **responsável da tarefa** com o **responável do plano**.
+> **❗ Importante**: Não confundir o **responsável da tarefa** com o **responsável do plano**.
 
 ## Permissões para interagir com a tarefa
 ||Editar/Deletar|Marcar como concluída|Reabrir|Comentar|
